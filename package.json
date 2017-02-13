@@ -1,0 +1,43 @@
+{
+  "name": "hexo-renderer-sass-bourbon-neat",
+  "version": "1.0.0",
+  "description": "Sass renderer plugin for Hexo with Bourbon/Neat support",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard",
+    "test": "mocha test/index.js",
+    "test-cov": "istanbul cover --print both _mocha -- test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vandreleal/hexo-renderer-sass-bourbon-neat.git"
+  },
+  "keywords": [
+    "hexo",
+    "renderer",
+    "hexo-renderer",
+    "sass",
+    "bourbon",
+    "neat"
+  ],
+  "author": "Vandré Leal Cândido",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vandreleal/hexo-renderer-sass-bourbon-neat/issues"
+  },
+  "homepage": "https://github.com/vandreleal/hexo-renderer-sass-bourbon-neat#readme",
+  "engines": {
+    "node": ">= 4"
+  },
+  "dependencies": {
+    "node-sass": "^4.5.0",
+    "bourbon": "^4.3.2",
+    "bourbon-neat": "^1.8.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "standard": "^8.6.0"
+  }
+}

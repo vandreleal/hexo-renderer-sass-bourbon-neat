@@ -1,0 +1,11 @@
+test/
+tmp/
+coverage/
+*.log
+.git*
+.DS_Store
+.jshintrc
+.travis.yml
+gulpfile.js
+.idea/
+appveyor.yml
