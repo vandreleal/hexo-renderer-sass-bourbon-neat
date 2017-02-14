@@ -2,7 +2,8 @@
 
 [![Build Status](https://travis-ci.org/vandreleal/hexo-renderer-sass-bourbon-neat.svg)](https://travis-ci.org/vandreleal/hexo-renderer-sass-bourbon-neat)
 [![NPM Version](https://badge.fury.io/js/hexo-renderer-sass-bourbon-neat.svg)](http://badge.fury.io/js/hexo-renderer-sass-bourbon-neat)
-[![NPM Dependencies](https://david-dm.org/vandreleal/hexo-renderer-sass-bourbon-neat.svg)](https://www.npmjs.com/package/hexo-renderer-sass-bourbon-neat)
+[![dependencies Status](https://david-dm.org/vandreleal/hexo-renderer-sass-bourbon-neat/status.svg)](https://david-dm.org/vandreleal/hexo-renderer-sass-bourbon-neat)
+[![devDependencies Status](https://david-dm.org/vandreleal/hexo-renderer-sass-bourbon-neat/dev-status.svg)](https://david-dm.org/vandreleal/hexo-renderer-sass-bourbon-neat?type=dev)
 [![Coverage Status](https://coveralls.io/repos/github/vandreleal/hexo-renderer-sass-bourbon-neat/badge.svg?branch=master)](https://coveralls.io/github/vandreleal/hexo-renderer-sass-bourbon-neat?branch=master)
 
 [Sass] renderer plugin for [Hexo] with [Bourbon]/[Neat] support.
