@@ -16,8 +16,7 @@ node_js:
   - "7"
 
 script:
-  - npm run lint
-  - npm run test-cov
+  - npm test
 
 after_script:
   - npm install coveralls
