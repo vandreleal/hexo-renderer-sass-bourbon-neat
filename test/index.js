@@ -2,8 +2,8 @@
 
 /* eslint-env mocha */
 
-var render = require('../lib/renderer');
-var should = require('chai').should(); // eslint-disable-line
+var render = require('../lib/renderer')
+var should = require('chai').should() // eslint-disable-line
 
 describe('Sass Renderer with Bourbon/Neat', function () {
   var ctx = {
@@ -24,9 +24,9 @@ describe('Sass Renderer with Bourbon/Neat', function () {
         }
       }
     }
-  };
+  }
 
-  var r = render.bind(ctx);
+  var r = render.bind(ctx)
 
   it('[1] default: scss syntax', function () {
     var body = [
@@ -34,123 +34,123 @@ describe('Sass Renderer with Bourbon/Neat', function () {
       '.foo {',
       '  color: $color;',
       '}'
-    ].join('\n');
+    ].join('\n')
 
-    var result = r({ text: body, path: './somepath/path.scss' }, {});
+    var result = r({ text: body, path: './somepath/path.scss' }, {})
     result.should.eql([
       '.foo {',
       '  color: red; }'
-    ].join('\n') + '\n');
+    ].join('\n') + '\n')
   })
 
   it('[2] default: sass syntax', function () {
-    ctx.config = { bourbon_neat: { indentedSyntax: true } };
+    ctx.config = { bourbon_neat: { indentedSyntax: true } }
 
     var body = [
       '$color: red',
       '.foo',
       '  color: $color'
-    ].join('\n');
+    ].join('\n')
 
-    var result = r({ text: body, path: './somepath/path.sass' }, {});
+    var result = r({ text: body, path: './somepath/path.sass' }, {})
     result.should.eql([
       '.foo {',
       '  color: red; }'
-    ].join('\n') + '\n');
+    ].join('\n') + '\n')
   })
 
   it('[3] outputStyle compressed: scss syntax', function () {
-    ctx.config = {};
-    ctx.theme.config = { bourbon_neat: { outputStyle: 'compressed' } };
+    ctx.config = {}
+    ctx.theme.config = { bourbon_neat: { outputStyle: 'compressed' } }
 
     var body = [
       '$color: red;',
       '.foo {',
       '  color: $color;',
       '}'
-    ].join('\n');
+    ].join('\n')
 
-    var result = r({ text: body, path: './somepath/path.scss' }, {});
+    var result = r({ text: body, path: './somepath/path.scss' }, {})
     result.should.eql([
       '.foo{color:red}'
-    ].join('\n') + '\n');
+    ].join('\n') + '\n')
   })
 
   it('[4] outputStyle compressed: sass syntax', function () {
-    ctx.config = {};
-    ctx.theme.config = { bourbon_neat: { indentedSyntax: true, outputStyle: 'compressed' } };
+    ctx.config = {}
+    ctx.theme.config = { bourbon_neat: { indentedSyntax: true, outputStyle: 'compressed' } }
 
     var body = [
       '$color: red',
       '.foo',
       '  color: $color'
-    ].join('\n');
+    ].join('\n')
 
-    var result = r({ text: body, path: './somepath/path.sass' }, {});
+    var result = r({ text: body, path: './somepath/path.sass' }, {})
     result.should.eql([
       '.foo{color:red}'
-    ].join('\n') + '\n');
+    ].join('\n') + '\n')
   })
 
   it('[5] supports root config: scss syntax', function () {
-    ctx.config = { bourbon_neat: { outputStyle: 'compressed' } };
-    ctx.theme.config = {};
+    ctx.config = { bourbon_neat: { outputStyle: 'compressed' } }
+    ctx.theme.config = {}
 
     var body = [
       '$color: red;',
       '.foo {',
       '  color: $color;',
       '}'
-    ].join('\n');
+    ].join('\n')
 
-    var result = r({ text: body, path: './somepath/path.scss' }, {});
+    var result = r({ text: body, path: './somepath/path.scss' }, {})
     result.should.eql([
       '.foo{color:red}'
-    ].join('\n') + '\n');
+    ].join('\n') + '\n')
   })
 
   it('[6] supports root config: sass syntax', function () {
-    ctx.config = { bourbon_neat: { indentedSyntax: true, outputStyle: 'compressed' } };
-    ctx.theme.config = {};
+    ctx.config = { bourbon_neat: { indentedSyntax: true, outputStyle: 'compressed' } }
+    ctx.theme.config = {}
 
     var body = [
       '$color: red',
       '.foo',
       '  color: $color'
-    ].join('\n');
+    ].join('\n')
 
-    var result = r({ text: body, path: './somepath/path.sass' }, {});
+    var result = r({ text: body, path: './somepath/path.sass' }, {})
     result.should.eql([
       '.foo{color:red}'
-    ].join('\n') + '\n');
+    ].join('\n') + '\n')
   })
 
   it('[7] throw when error occurs: scss syntax', function () {
-    ctx.config = {};
-    ctx.theme.config = { bourbon_neat: { outputStyle: 'compressed' } };
+    ctx.config = {}
+    ctx.theme.config = { bourbon_neat: { outputStyle: 'compressed' } }
 
     var body = [
       '.foo {',
       '  color: $color;',
       '}'
-    ].join('\n');
+    ].join('\n')
 
     should.Throw(function () {
-      return r({ text: body, path: './somepath/path.scss' }, {});
+      return r({ text: body, path: './somepath/path.scss' }, {})
     })
   })
 
   it('[8] throw when error occurs: sass syntax', function () {
-    ctx.config = { bourbon_neat: {} };
-    ctx.theme.config = { bourbon_neat: { outputStyle: 'compressed' } };
+    ctx.config = { bourbon_neat: {} }
+    ctx.theme.config = { bourbon_neat: { outputStyle: 'compressed' } }
 
     var body = [
       '.foo',
       '  color: $color'
-    ].join('\n');
+    ].join('\n')
 
     should.Throw(function () {
-      return r({ text: body, path: './somepath/path.sass' }, {});
+      return r({ text: body, path: './somepath/path.sass' }, {})
     })
   })
 })
