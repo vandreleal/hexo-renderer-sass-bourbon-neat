@@ -44,7 +44,7 @@ describe('Sass Renderer with Bourbon/Neat', function () {
   })
 
   it('[2] default: sass syntax', function () {
-    ctx.theme.config = { bourbon_neat: { indentedSyntax: true } };
+    ctx.config = { bourbon_neat: { indentedSyntax: true } };
 
     var body = [
       '$color: red',
@@ -92,9 +92,9 @@ describe('Sass Renderer with Bourbon/Neat', function () {
     ].join('\n') + '\n');
   })
 
-  it('[5] supports theme config: scss syntax', function () {
-    ctx.config = {};
-    ctx.theme.config = { bourbon_neat: { outputStyle: 'compressed' } };
+  it('[5] supports root config: scss syntax', function () {
+    ctx.config = { bourbon_neat: { outputStyle: 'compressed' } };
+    ctx.theme.config = {};
 
     var body = [
       '$color: red;',
@@ -109,9 +109,9 @@ describe('Sass Renderer with Bourbon/Neat', function () {
     ].join('\n') + '\n');
   })
 
-  it('[6] supports theme config: sass syntax', function () {
-    ctx.config = {};
-    ctx.theme.config = { bourbon_neat: { indentedSyntax: true, outputStyle: 'compressed' } };
+  it('[6] supports root config: sass syntax', function () {
+    ctx.config = { bourbon_neat: { indentedSyntax: true, outputStyle: 'compressed' } };
+    ctx.theme.config = {};
 
     var body = [
       '$color: red',

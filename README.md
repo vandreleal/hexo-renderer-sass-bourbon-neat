@@ -40,11 +40,11 @@ bourbon_neat:
 
 ### Inheritance
 The config object passed to [node-sass] is constructed by merging properties from
-the following locations using the order below:
+the following locations using a least-specific-first order:
 
 1. Hardcoded Defaults (`{ outputStyle: 'nested', sourceComments: false }`)
-2. Blog root `_config.yml`
-3. Theme specific `_config.yml`
+2. Theme specific `_config.yml`
+3. Blog root `_config.yml`
 
 [Hexo]: http://hexo.io/
 [Sass]: http://sass-lang.com/
