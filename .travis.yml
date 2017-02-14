@@ -2,11 +2,6 @@ language: node_js
 
 sudo: false
 
-cache:
-  apt: true
-  directories:
-    - node_modules
-
 # track upstream node_js matrix:
 # - https://github.com/hexojs/hexo/blob/master/.travis.yml
 # - https://github.com/sass/node-sass/blob/master/.travis.yml
