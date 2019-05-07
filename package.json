@@ -1,6 +1,6 @@
 {
   "name": "hexo-renderer-sass-bourbon-neat",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Sass renderer plugin for Hexo with Bourbon/Neat support",
   "main": "index.js",
   "scripts": {
@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/vandreleal/hexo-renderer-sass-bourbon-neat#readme",
   "engines": {
-    "node": ">= 4"
+    "node": ">= 8"
   },
   "dependencies": {
     "bourbon": "5.1.0",
