@@ -1,6 +1,6 @@
 {
   "name": "hexo-renderer-sass-bourbon-neat",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Sass renderer plugin for Hexo with Bourbon/Neat support",
   "main": "index.js",
   "scripts": {
@@ -30,14 +30,14 @@
     "node": ">= 4"
   },
   "dependencies": {
-    "bourbon": "^5.0.0",
-    "bourbon-neat": "^2.1.0",
-    "node-sass": "^4.7.2"
+    "bourbon": "5.1.0",
+    "bourbon-neat": "3.0.1",
+    "node-sass": "4.12.0"
   },
   "devDependencies": {
-    "chai": "^4.1.2",
+    "chai": "4.2.0",
     "istanbul": "^0.4.5",
-    "mocha": "^4.1.0",
-    "standard": "^10.0.3"
+    "mocha": "6.1.4",
+    "standard": "12.0.1"
   }
 }
