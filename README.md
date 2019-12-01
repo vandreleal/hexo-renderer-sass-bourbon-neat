@@ -4,7 +4,6 @@
 [![NPM Version](https://badge.fury.io/js/hexo-renderer-sass-bourbon-neat.svg)](http://badge.fury.io/js/hexo-renderer-sass-bourbon-neat)
 [![dependencies Status](https://david-dm.org/vandreleal/hexo-renderer-sass-bourbon-neat/status.svg)](https://david-dm.org/vandreleal/hexo-renderer-sass-bourbon-neat)
 [![devDependencies Status](https://david-dm.org/vandreleal/hexo-renderer-sass-bourbon-neat/dev-status.svg)](https://david-dm.org/vandreleal/hexo-renderer-sass-bourbon-neat?type=dev)
-[![Coverage Status](https://coveralls.io/repos/github/vandreleal/hexo-renderer-sass-bourbon-neat/badge.svg?branch=master)](https://coveralls.io/github/vandreleal/hexo-renderer-sass-bourbon-neat?branch=master)
 
 [Sass] renderer plugin for [Hexo] with [Bourbon]/[Neat] support.
 
@@ -17,9 +16,9 @@ $ npm install hexo-renderer-sass-bourbon-neat --save
 
 | Package     | Version |
 |-------------|---------|
-| [Bourbon]   | 5.0.0   |
-| [Neat]      | 2.1.0   |
-| [node-sass] | 4.7.2   |
+| [Bourbon]   | 6.0.0   |
+| [Neat]      | 4.0.0   |
+| [node-sass] | 4.13.0  |
 
 ## Usage
 To enable Bourbon/Neat support you need to import it at the beginning of your stylesheet:
