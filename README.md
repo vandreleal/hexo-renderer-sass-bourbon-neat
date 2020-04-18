@@ -16,9 +16,9 @@ $ npm install hexo-renderer-sass-bourbon-neat --save
 
 | Package     | Version |
 |-------------|---------|
-| [Bourbon]   | 6.0.0   |
+| [Bourbon]   | 7.0.0   |
 | [Neat]      | 4.0.0   |
-| [node-sass] | 4.13.0  |
+| [node-sass] | 4.13.1  |
 
 ## Usage
 To enable Bourbon/Neat support you need to import it at the beginning of your stylesheet:

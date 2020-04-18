@@ -6,9 +6,10 @@ sudo: false
 # - https://github.com/hexojs/hexo/blob/master/.travis.yml
 # - https://github.com/sass/node-sass/blob/master/.travis.yml
 node_js:
-  - "4"
-  - "6"
-  - "7"
+  - node # Current stable
+  - lts/* # Most recent LTS version
+  - 10 # Explicitly include an active LTS version
+  - 8 # Explicitly include the maintenance LTS version
 
 script:
   - npm run lint
