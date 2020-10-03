@@ -9,7 +9,6 @@ node_js:
   - node # Current stable
   - lts/* # Most recent LTS version
   - 10 # Explicitly include an active LTS version
-  - 8 # Explicitly include the maintenance LTS version
 
 script:
   - npm run lint
