@@ -29,7 +29,7 @@
     "node": ">= 10"
   },
   "dependencies": {
-    "bourbon": "7.0.0",
+    "bourbon": "7.2.0",
     "bourbon-neat": "4.0.0",
     "node-sass": "6.0.1"
   },
