@@ -31,7 +31,7 @@
   "dependencies": {
     "bourbon": "7.0.0",
     "bourbon-neat": "4.0.0",
-    "node-sass": "6.0.1"
+    "node-sass": "7.0.2"
   },
   "devDependencies": {
     "chai": "4.3.6",
